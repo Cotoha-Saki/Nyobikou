@@ -7,10 +7,34 @@
 */
 
 //配列の要素へのアクセス
-const testArray = [1, 2, 3, 4, 5];
+
+/* const testArray = [1, 2, 3, 4, 5];
 for (let i = 0; i < 5; i++) {
   console.log(testArray[i]);
+} */
+
+
+/* let classes = ['A組','B組','C組','D組']; //1学年の組として4つの要素の配列を持つ変数 classesに用意している。
+for (let i = 0; i < classes.length; i++) { // 「i < classes」では変数 i が配列の長さを表す classes.lengthより小さい間はループさせる。
+    document.write('<p>' + '1年' + classes[i] + '</p>');
+    console.log('1年' + classes[i]);
+} */
+
+let classes = ['A組','B組','C組','D組']; //上記のコードと同様
+for (let i = 0; i < classes.length; i++) { 
+    for (let grade = 1; grade <= 3; grade++) {
+        document.write('<p>' + grade + '年' + classes[i] + '</p>');
+    }
 }
+
+
+
+
+
+
+
+
+
 
 /*
 　　配の長さは「.length（レングス）」を用して取得できる。
