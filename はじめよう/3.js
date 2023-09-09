@@ -1,17 +1,27 @@
-let age = 16;
+let age = 15;
 let result = null;
-if (age > 16) {
-    result = '成年';
+let isMember = true;
+if (age >= 60 && isMember === true) {
+    result = 'シニア会員割引対象です。'
 } else {
-    result = '未成年';
-}
+    result = 'シニア会員割引の対象ではありません。'
+};
+
 document.write(result);
 
-/*
-表現：Aではない / 名称；否定 / 演算子：!
-表現：AまたはB / 名称；論理和 / 演算子：||
-表現：AかつB / 名称；論理積 / 演算子：&&
+let number = 3
+if (number % 3 === 0) {
+    console.log('サァン！');
+} else {
+    console.log(number)
+} 
 
-表現：真ではない / 名称；!true / 演算子：false
-表現：偽ではない / 名称；!false / 演算子：true
-*/
+if (age <= 15) {
+    result = '800円';
+} else if (isMember){
+    result = '1000円'
+} else {
+    result = '1800円'
+}
+
+document.write(result);
