@@ -36,17 +36,30 @@
 ・1 === 2　：false      
   
       
-・「Aではない(否定)」->「!」
-----------  
-・「真ではない」!true「false」  
-・「偽ではない」!false「true」  
-
       
-・「AまたはB(論理和)」->「||」  
----------
-・「真または真」true||true 「true」
-
-
-・「AかつB(論理積)」->「&&」  
-----
+不等値演算子（演算子の左側と右側が不等値であるか判断する。 Boolean型 の値を返す。）
+----------  
+・1 !== 1　：false    
+・1 !== 2　：true      
   
+      
+論理演算子
+----------
+「Aではない(否定)」　：!
+「AまたはB(論理和)」　：||  
+「AかつB(論理積)」　：&&  
+
+  
+例：
+・「Aではない」!true　：false  
+・「Bではない」!false　：true   
+
+・「AまたはA」true||true　：true  
+・「AまたはB」true||false　：true  
+・「BまたはA」false||true　：true  
+・「BまたはB」false||false　：false  
+
+・「AかつA」true&&true　：true  
+・「AかつB」true&&false　：false  
+・「BかつA」false&&true　：false  
+・「BかつB」false&&false　：false  
